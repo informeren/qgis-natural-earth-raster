@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/natural_earth_raster" >
+        <file>assets/icon.png</file>
+    </qresource>
+</RCC>

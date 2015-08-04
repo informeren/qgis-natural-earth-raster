@@ -1,0 +1,49 @@
+high;GRAY_HR_SR;Gray earth with shaded relief and hypsography;GRAY_SR.png;http://naciscdn.org/naturalearth/10m/raster/GRAY_HR_SR.zip
+high;GRAY_HR_SR_W;Gray earth with shaded relief, hypsography, and flat water;GRAY_SR_W.png;http://naciscdn.org/naturalearth/10m/raster/GRAY_HR_SR_W.zip
+high;GRAY_HR_SR_OB;Gray earth with shaded relief, hypsography, and ocean bottom;GRAY_SR_OB.png;http://naciscdn.org/naturalearth/10m/raster/GRAY_HR_SR_OB.zip
+high;GRAY_HR_SR_OB_DR;Gray earth with shaded relief, hypsography, ocean bottom, and drainages;GRAY_SR_OB_DR.png;http://naciscdn.org/naturalearth/10m/raster/GRAY_HR_SR_OB_DR.zip
+high;HYP_HR;Cross blended hypso;HYP.png;http://naciscdn.org/naturalearth/10m/raster/HYP_HR.zip
+high;HYP_HR_SR;Cross blended hypso with shaded relief;HYP_SR.png;http://naciscdn.org/naturalearth/10m/raster/HYP_HR_SR.zip
+high;HYP_HR_SR_W;Cross blended hypso with shaded relief and water;HYP_SR_W.png;http://naciscdn.org/naturalearth/10m/raster/HYP_HR_SR_W.zip
+high;HYP_HR_SR_W_DR;Cross blended hypso with shaded relief, water, and drainages;HYP_SR_W_DR.png;http://naciscdn.org/naturalearth/10m/raster/HYP_HR_SR_W_DR.zip
+high;HYP_HR_SR_OB_DR;Cross blended hypso with shaded relief, water, drainages, and ocean bottom;HYP_SR_OB_DR.png;http://naciscdn.org/naturalearth/10m/raster/HYP_HR_SR_OB_DR.zip
+high;NE1_HR_LC;Natural Earth I;NE1_LC.png;http://naciscdn.org/naturalearth/10m/raster/NE1_HR_LC.zip
+high;NE1_HR_LC_SR;Natural Earth I with shaded relief;NE1_LC_SR.png;http://naciscdn.org/naturalearth/10m/raster/NE1_HR_LC_SR.zip
+high;NE1_HR_LC_SR_W;Natural Earth I with shaded relief and water;NE1_LC_SR_W.png;http://naciscdn.org/naturalearth/10m/raster/NE1_HR_LC_SR_W.zip
+high;NE1_HR_LC_SR_W_DR;Natural Earth I with shaded relief, water, and drainages;NE1_LC_SR_W_DR.png;http://naciscdn.org/naturalearth/10m/raster/NE1_HR_LC_SR_W_DR.zip
+high;NE2_HR_LC;Natural Earth II;NE2_LC.png;http://naciscdn.org/naturalearth/10m/raster/NE2_HR_LC.zip
+high;NE2_HR_LC_SR;Natural Earth II with shaded relief;NE2_LC_SR.png;http://naciscdn.org/naturalearth/10m/raster/NE2_HR_LC_SR.zip
+high;NE2_HR_LC_SR_W;Natural Earth II with shaded relief and water;NE2_LC_SR_W.png;http://naciscdn.org/naturalearth/10m/raster/NE2_HR_LC_SR_W.zip
+high;NE2_HR_LC_SR_W_DR;Natural Earth II with shaded relief, water, and drainages;NE2_LC_SR_W_DR.png;http://naciscdn.org/naturalearth/10m/raster/NE2_HR_LC_SR_W_DR.zip
+high;SR_HR;Shaded relief basic;SR.png;http://naciscdn.org/naturalearth/10m/raster/SR_HR.zip
+low;GRAY_50M_SR;Gray earth with shaded relief and hypsography;GRAY_SR.png;http://naciscdn.org/naturalearth/50m/raster/GRAY_50M_SR.zip
+low;GRAY_50M_SR_W;Gray earth with shaded relief, hypsography, and flat water;GRAY_SR_W.png;http://naciscdn.org/naturalearth/50m/raster/GRAY_50M_SR_W.zip
+low;GRAY_50M_SR_OB;Gray earth with shaded relief, hypsography, and ocean bottom;GRAY_SR_OB.png;http://naciscdn.org/naturalearth/50m/raster/GRAY_50M_SR_OB.zip
+low;HYP_50M_SR;Cross blended hypso with shaded relief;HYP_SR.png;http://naciscdn.org/naturalearth/50m/raster/HYP_50M_SR.zip
+low;HYP_50M_SR_W;Cross blended hypso with shaded relief and water;HYP_SR_W.png;http://naciscdn.org/naturalearth/50m/raster/HYP_50M_SR_W.zip
+low;MSR_50M;Manual shaded relief;MSR.png;http://naciscdn.org/naturalearth/50m/raster/MSR_50M.zip
+low;NE1_50M_SR;Natural Earth I with shaded relief;NE1_SR.png;http://naciscdn.org/naturalearth/50m/raster/NE1_50m_SR.zip
+low;NE1_50M_SR_W;Natural Earth I with shaded relief and water;NE1_SR_W.png;http://naciscdn.org/naturalearth/50m/raster/NE1_50M_SR_W.zip
+low;NE2_50M_SR;Natural Earth II with shaded relief;NE2_SR.png;http://naciscdn.org/naturalearth/50m/raster/NE2_50m_SR.zip
+low;NE2_50M_SR_W;Natural Earth II with shaded relief and water;NE2_SR_W.png;http://naciscdn.org/naturalearth/50m/raster/NE2_50M_SR_W.zip
+low;OB_50M;Ocean bottom;OB.png;http://naciscdn.org/naturalearth/50m/raster/OB_50M.zip
+low;SR_50M;Shaded relief basic;SR.png;http://naciscdn.org/naturalearth/50m/raster/SR_50M.zip
+medium;GRAY_LR_SR;Gray earth with shaded relief and hypsography;GRAY_SR.png;http://naciscdn.org/naturalearth/10m/raster/GRAY_LR_SR.zip
+medium;GRAY_LR_SR_W;Gray earth with shaded relief, hypsography, and flat water;GRAY_SR_W.png;http://naciscdn.org/naturalearth/10m/raster/GRAY_LR_SR_W.zip
+medium;GRAY_LR_SR_OB;Gray earth with shaded relief, hypsography, and ocean bottom;GRAY_SR_OB.png;http://naciscdn.org/naturalearth/10m/raster/GRAY_LR_SR_OB.zip
+medium;GRAY_LR_SR_OB_DR;Gray earth with shaded relief, hypsography, ocean bottom, and drainages;GRAY_SR_OB_DR.png;http://naciscdn.org/naturalearth/10m/raster/GRAY_LR_SR_OB_DR.zip
+medium;HYP_LR;Cross blended hypso;HYP.png;http://naciscdn.org/naturalearth/10m/raster/HYP_LR.zip
+medium;HYP_LR_SR;Cross blended hypso with shaded relief;HYP_SR.png;http://naciscdn.org/naturalearth/10m/raster/HYP_LR_SR.zip
+medium;HYP_LR_SR_W;Cross blended hypso with shaded relief and water;HYP_SR_W.png;http://naciscdn.org/naturalearth/10m/raster/HYP_LR_SR_W.zip
+medium;HYP_LR_SR_W_DR;Cross blended hypso with shaded relief, water, and drainages;HYP_SR_W_DR.png;http://naciscdn.org/naturalearth/10m/raster/HYP_LR_SR_W_DR.zip
+medium;HYP_LR_SR_OB_DR;Cross blended hypso with shaded relief, water, drainages, and ocean bottom;HYP_SR_OB_DR.png;http://naciscdn.org/naturalearth/10m/raster/HYP_LR_SR_OB_DR.zip
+medium;NE1_LR_LC;Natural Earth I;NE1_LC.png;http://naciscdn.org/naturalearth/10m/raster/NE1_LR_LC.zip
+medium;NE1_LR_LC_SR;Natural Earth I with shaded relief;NE1_LC_SR.png;http://naciscdn.org/naturalearth/10m/raster/NE1_LR_LC_SR.zip
+medium;NE1_LR_LC_SR_W;Natural Earth I with shaded relief and water;NE1_LC_SR_W.png;http://naciscdn.org/naturalearth/10m/raster/NE1_LR_LC_SR_W.zip
+medium;NE1_LR_LC_SR_W_DR;Natural Earth I with shaded relief, water, and drainages;NE1_LC_SR_W_DR.png;http://naciscdn.org/naturalearth/10m/raster/NE1_LR_LC_SR_W_DR.zip
+medium;NE2_LR_LC;Natural Earth II;NE2_LC.png;http://naciscdn.org/naturalearth/10m/raster/NE2_LR_LC.zip
+medium;NE2_LR_LC_SR;Natural Earth II with shaded relief;NE2_LC_SR.png;http://naciscdn.org/naturalearth/10m/raster/NE2_LR_LC_SR.zip
+medium;NE2_LR_LC_SR_W;Natural Earth II with shaded relief and water;NE2_LC_SR_W.png;http://naciscdn.org/naturalearth/10m/raster/NE2_LR_LC_SR_W.zip
+medium;NE2_LR_LC_SR_W_DR;Natural Earth II with shaded relief, water, and drainages;NE2_LC_SR_W_DR.png;http://naciscdn.org/naturalearth/10m/raster/NE2_LR_LC_SR_W_DR.zip
+medium;OB_LR;Ocean bottom;OB.png;http://naciscdn.org/naturalearth/10m/raster/OB_LR.zip
+medium;SR_LR;Shaded relief basic;SR.png;http://naciscdn.org/naturalearth/10m/raster/SR_LR.zip
