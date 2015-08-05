@@ -58,7 +58,6 @@ class NaturalEarthRaster:
         # declare instance attributes
         self.action = None
         self.menu = self.tr('&Natural Earth')
-        self.scales = ['high', 'medium', 'low']
 
     def initGui(self):
         """Create the menu entries inside the QGIS GUI."""
