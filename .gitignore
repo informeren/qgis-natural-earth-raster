@@ -1,0 +1,6 @@
+.DS_Store
+*.acorn
+*.pdf
+notes.txt
+release.sh
+
