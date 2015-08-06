@@ -215,8 +215,14 @@ class NaturalEarthRaster:
         # create a new rasterlayer from the supplied TIF file
         layer = QgsRasterLayer(path, id)
 
-        # disable contrans enhancement to make sure the image looks nice
-        layer.setContrastEnhancement(QgsContrastEnhancement.NoEnhancement)
+        # load layer style based on number of bands
+        bands = layer.bandCount()
+        if bands == 1:
+            path = os.path.join(self.plugin_dir, 'styles', 'singleband.qml')
+        else:
+            path = os.path.join(self.plugin_dir, 'styles', 'multiband.qml')
+
+        layer.loadNamedStyle(path)
 
         # add the layer to the workspace
         QgsMapLayerRegistry.instance().addMapLayer(layer)

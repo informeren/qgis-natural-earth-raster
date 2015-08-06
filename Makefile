@@ -57,7 +57,7 @@ DATA = natural_earth.csv
 
 COMPILED_RESOURCE_FILES = natural_earth_raster_dialog.py resources_rc.py
 
-PEP8EXCLUDE=pydev,resources_rc.py,conf.py,third_party,ui
+PEP8EXCLUDE=pydev,resources_rc.py,conf.py,natural_earth_raster_dialog.py,third_party,ui
 
 #################################################
 # Normally you would not need to edit below here
@@ -98,6 +98,7 @@ deploy: compile transcompile
 	cp -vf $(addprefix ./assets/previews/, $(PREVIEWS)) $(HOME)/$(QGISDIR)/python/plugins/$(PLUGINNAME)/assets/previews
 	mkdir -p $(HOME)/$(QGISDIR)/python/plugins/$(PLUGINNAME)/data
 	cp -vf $(addprefix ./data/, $(DATA)) $(HOME)/$(QGISDIR)/python/plugins/$(PLUGINNAME)/data
+	cp -vfr styles $(HOME)/$(QGISDIR)/python/plugins/$(PLUGINNAME)
 	cp -vfr i18n $(HOME)/$(QGISDIR)/python/plugins/$(PLUGINNAME)
 
 dclean:
