@@ -1,5 +1,5 @@
 from PyQt4.QtCore import (Qt, QCoreApplication, QSettings, QThread,
-    QTranslator, qVersion)
+    QTranslator, qVersion, SIGNAL)
 from PyQt4.QtGui import (QAction, QDialog, QIcon, QLabel, QPixmap,
     QProgressBar, QPushButton)
 from qgis.core import (QgsContrastEnhancement, QgsMapLayerRegistry,
@@ -215,14 +215,11 @@ class NaturalEarthRaster:
         # create a new rasterlayer from the supplied TIF file
         layer = QgsRasterLayer(path, id)
 
-        # load layer style based on number of bands
-        bands = layer.bandCount()
-        if bands == 1:
-            path = os.path.join(self.plugin_dir, 'styles', 'singleband.qml')
-        else:
-            path = os.path.join(self.plugin_dir, 'styles', 'multiband.qml')
+        # disable contrast enhancement to show the original image
+        layer.setContrastEnhancement(QgsContrastEnhancement.NoEnhancement)
 
-        layer.loadNamedStyle(path)
+        # update any views showing the layer
+        layer.emit(SIGNAL('repaintRequested'))
 
         # add the layer to the workspace
         QgsMapLayerRegistry.instance().addMapLayer(layer)
@@ -240,5 +237,6 @@ class NaturalEarthRaster:
     # noinspection PyMethodMayBeStatic
     def tr(self, message):
         """Get the translation for a string using Qt translation API."""
+
         # noinspection PyTypeChecker,PyArgumentList,PyCallByClass
         return QCoreApplication.translate('Natural Earth Raster', message)
