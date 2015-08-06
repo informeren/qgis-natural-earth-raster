@@ -55,7 +55,7 @@ PREVIEWS = \
 	SR.png
 DATA = natural_earth.csv
 
-COMPILED_RESOURCE_FILES = resources_rc.py
+COMPILED_RESOURCE_FILES = natural_earth_raster_dialog.py resources_rc.py
 
 PEP8EXCLUDE=pydev,resources_rc.py,conf.py,third_party,ui
 
@@ -74,6 +74,9 @@ compile: $(COMPILED_RESOURCE_FILES)
 
 %_rc.py: %.qrc $(RESOURCES_SRC)
 	pyrcc4 -o $*_rc.py $<
+
+%.py: %.ui
+	pyuic4 -w -o $*.py $<
 
 %.qm: %.ts
 	$(LRELEASE) $<
