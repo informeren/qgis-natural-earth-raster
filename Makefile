@@ -10,12 +10,6 @@ LOCALES = da
 # lrelease binary.
 LRELEASE = lrelease
 
-# translation
-SOURCES = \
-	__init__.py \
-	natural_earth_raster.py \
-	natural_earth_raster_dialog.py
-
 PLUGINNAME = natural_earth_raster
 
 PY_FILES = \
