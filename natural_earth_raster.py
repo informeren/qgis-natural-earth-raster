@@ -48,6 +48,7 @@ class NaturalEarthRaster:
 
         self.themes = {'high': [], 'medium': [], 'low': []}
 
+        # read theme metadata from local file
         csv_file = os.path.join(self.plugin_dir, 'data', 'natural_earth.csv')
         with open(csv_file, 'rb') as csvfile:
             reader = csv.reader(csvfile, delimiter=';')
