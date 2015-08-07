@@ -10,12 +10,6 @@ LOCALES = da
 # lrelease binary.
 LRELEASE = lrelease
 
-# translation
-SOURCES = \
-	__init__.py \
-	natural_earth_raster.py \
-	natural_earth_raster_dialog.py
-
 PLUGINNAME = natural_earth_raster
 
 PY_FILES = \
@@ -28,36 +22,11 @@ UI_FILES = natural_earth_raster_dialog.ui
 
 EXTRAS = metadata.txt
 ASSETS = icon.png
-PREVIEWS = \
-	GRAY_SR_OB_DR.png \
-	GRAY_SR_OB.png \
-	GRAY_SR_W.png \
-	GRAY_SR.png \
-	HYP_SR_OB_DR.png \
-	HYP_SR_W_DR.png \
-	HYP_SR_W.png \
-	HYP_SR.png \
-	HYP.png \
-	MSR.png \
-	NE1_LC_SR_W_DR.png \
-	NE1_LC_SR_W.png \
-	NE1_LC_SR.png \
-	NE1_LC.png \
-	NE1_SR_W.png \
-	NE1_SR.png \
-	NE2_LC_SR_W_DR.png \
-	NE2_LC_SR_W.png \
-	NE2_LC_SR.png \
-	NE2_LC.png \
-	NE2_SR_W.png \
-	NE2_SR.png \
-	OB.png \
-	SR.png
 DATA = natural_earth.csv
 
-COMPILED_RESOURCE_FILES = resources_rc.py
+COMPILED_RESOURCE_FILES = natural_earth_raster_dialog.py resources_rc.py
 
-PEP8EXCLUDE=pydev,resources_rc.py,conf.py,third_party,ui
+PEP8EXCLUDE=natural_earth_raster_dialog.py,resources_rc.py
 
 #################################################
 # Normally you would not need to edit below here
@@ -75,6 +44,9 @@ compile: $(COMPILED_RESOURCE_FILES)
 %_rc.py: %.qrc $(RESOURCES_SRC)
 	pyrcc4 -o $*_rc.py $<
 
+%.py: %.ui
+	pyuic4 -w -o $*.py $<
+
 %.qm: %.ts
 	$(LRELEASE) $<
 
@@ -91,10 +63,10 @@ deploy: compile transcompile
 	cp -vf $(EXTRAS) $(HOME)/$(QGISDIR)/python/plugins/$(PLUGINNAME)
 	mkdir -p $(HOME)/$(QGISDIR)/python/plugins/$(PLUGINNAME)/assets
 	cp -vf $(addprefix ./assets/, $(ASSETS)) $(HOME)/$(QGISDIR)/python/plugins/$(PLUGINNAME)/assets
-	mkdir -p $(HOME)/$(QGISDIR)/python/plugins/$(PLUGINNAME)/assets/previews
-	cp -vf $(addprefix ./assets/previews/, $(PREVIEWS)) $(HOME)/$(QGISDIR)/python/plugins/$(PLUGINNAME)/assets/previews
 	mkdir -p $(HOME)/$(QGISDIR)/python/plugins/$(PLUGINNAME)/data
 	cp -vf $(addprefix ./data/, $(DATA)) $(HOME)/$(QGISDIR)/python/plugins/$(PLUGINNAME)/data
+	cp -vfr assets/previews $(HOME)/$(QGISDIR)/python/plugins/$(PLUGINNAME)/assets
+	cp -vfr styles $(HOME)/$(QGISDIR)/python/plugins/$(PLUGINNAME)
 	cp -vfr i18n $(HOME)/$(QGISDIR)/python/plugins/$(PLUGINNAME)
 
 dclean:

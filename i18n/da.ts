@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="da" sourcelanguage="en_US">
+<!DOCTYPE TS><TS version="2.0" language="da" sourcelanguage="en_US">
 <context>
     <name>NaturalEarthRaster</name>
     <message>
@@ -9,17 +8,17 @@
         <translation>&amp;Natural Earth</translation>
     </message>
     <message>
-        <location filename="natural_earth_raster.py" line="67"/>
+        <location filename="natural_earth_raster.py" line="66"/>
         <source>Add theme...</source>
         <translation>Tilføj tema...</translation>
     </message>
     <message>
-        <location filename="natural_earth_raster.py" line="133"/>
+        <location filename="natural_earth_raster.py" line="132"/>
         <source>Cancel</source>
         <translation>Annullér</translation>
     </message>
     <message>
-        <location filename="natural_earth_raster.py" line="177"/>
+        <location filename="natural_earth_raster.py" line="176"/>
         <source>Theme download cancelled by user.</source>
         <translation>Download af tema annulleret af brugeren.</translation>
     </message>

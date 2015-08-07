@@ -1,5 +1,5 @@
 from PyQt4.QtCore import (Qt, QCoreApplication, QSettings, QThread,
-    QTranslator, qVersion)
+    QTranslator, qVersion, SIGNAL)
 from PyQt4.QtGui import (QAction, QDialog, QIcon, QLabel, QPixmap,
     QProgressBar, QPushButton)
 from qgis.core import (QgsContrastEnhancement, QgsMapLayerRegistry,
@@ -48,6 +48,7 @@ class NaturalEarthRaster:
 
         self.themes = {'high': [], 'medium': [], 'low': []}
 
+        # read theme metadata from local file
         csv_file = os.path.join(self.plugin_dir, 'data', 'natural_earth.csv')
         with open(csv_file, 'rb') as csvfile:
             reader = csv.reader(csvfile, delimiter=';')
@@ -215,8 +216,14 @@ class NaturalEarthRaster:
         # create a new rasterlayer from the supplied TIF file
         layer = QgsRasterLayer(path, id)
 
-        # disable contrans enhancement to make sure the image looks nice
-        layer.setContrastEnhancement(QgsContrastEnhancement.NoEnhancement)
+        # load layer style based on number of bands
+        bands = layer.bandCount()
+        if bands == 1:
+            path = os.path.join(self.plugin_dir, 'styles', 'singleband.qml')
+        else:
+            path = os.path.join(self.plugin_dir, 'styles', 'multiband.qml')
+
+        layer.loadNamedStyle(path)
 
         # add the layer to the workspace
         QgsMapLayerRegistry.instance().addMapLayer(layer)
@@ -234,5 +241,6 @@ class NaturalEarthRaster:
     # noinspection PyMethodMayBeStatic
     def tr(self, message):
         """Get the translation for a string using Qt translation API."""
+
         # noinspection PyTypeChecker,PyArgumentList,PyCallByClass
         return QCoreApplication.translate('Natural Earth Raster', message)
