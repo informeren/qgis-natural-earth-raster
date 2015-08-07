@@ -7,6 +7,7 @@ version=1.0.0
 author=Morten Wulff
 email=wulff@ratatosk.net
 tags=layers, raster
+homepage=http://informeren.github.io/qgis/
 tracker=https://github.com/informeren/qgis-natural-earth-raster/issues
 repository=https://github.com/informeren/qgis-natural-earth-raster
 category=Raster
