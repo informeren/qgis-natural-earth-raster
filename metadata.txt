@@ -2,7 +2,7 @@
 name=Natural Earth Raster
 qgisMinimumVersion=2.8
 description=Add Natural Earth raster themes to your projects.
-about=This plugin makes it easy to add Natual Earth data to your projects from within QGIS.
+about=This plugin makes it easy to add Natural Earth data to your projects from within QGIS.
 version=1.0.0
 author=Morten Wulff
 email=wulff@ratatosk.net
